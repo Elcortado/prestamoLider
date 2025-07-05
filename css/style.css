@@ -153,7 +153,10 @@ h6,
         opacity: 1;
     }
 }
-
+#logo {
+    width: 5rem;
+    
+}
 
 /*** Header ***/
 .carousel-caption {

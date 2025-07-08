@@ -363,6 +363,7 @@ h6,
 
 
 /*** Team ***/
+
 .team-item {
     position: relative;
     padding: 4rem 0;
@@ -371,7 +372,10 @@ h6,
 .team-item img {
     position: relative;
     z-index: 2;
+   
+  
 }
+
 
 .team-item .team-text {
     position: absolute;
@@ -388,7 +392,7 @@ h6,
     justify-content: space-between;
     transition: .5s;
     z-index: 1;
-}
+    }
 
 .team-item:hover .team-text {
     background: var(--primary);
@@ -542,3 +546,69 @@ h6,
 .copyright a:hover {
     color: var(--primary);
 }
+
+/*Video detail page*/
+
+.tm-video-title { font-size: 2.5rem; }
+.tm-share-box { 
+    font-size: 1.4rem; 
+    padding: 3rem;
+}
+.tm-share-box-title { font-size: 1.4rem; }
+
+.tm-bg-white {
+    background-color: white;
+    border: 1px solid #CDCECF;
+    border-radius: 5px;
+}
+
+.tm-share-button {
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 24px;
+}
+
+.tm-share-button:last-child { margin-right: 0; }
+.tm-text-link { color: #3399CC; }
+
+.tm-likes-box,
+.tm-btn-download {
+    width: 280px;
+    height: 60px;
+}
+
+.tm-likes-box { padding-top: 12px; }
+.tm-video-description-box { max-width: 920px; }
+.tm-text-gray { color: #6F7071; }
+
+.tm-fixed-header {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;    
+    background-color: #666;
+}
+
+#tm-fixed-header-bg { height: 450px; }
+.tm-fixed-header-1 { background-image: url(../img/video-detail-1.jpg); }
+.tm-fixed-header-2 { background-image: url(../img/about-1.jpg); }
+.tm-fixed-header-3 { background-image: url(../img/contact-1.jpg); }
+
+video {
+  width: 100%;
+  height: auto;
+}
+
+.fa-facebook { color: #3b5998; }
+.fa-twitter { color: #00acee; }
+.fa-pinterest { color: #c8232c; }
+.tm-liked-icon { display: none; }
+.tm-not-liked-icon { display: inline-block; }
+.tm-liked-icon, .tm-not-liked-icon { margin-top: 3px; }
+.tm-liked .tm-liked-icon { display: inline-block; }
+.tm-liked .tm-not-liked-icon { display: none; }
+.tm-welcome-text-2 { max-width: 575px; }
+.tm-share-button:hover { background-color: #e9ecef; }

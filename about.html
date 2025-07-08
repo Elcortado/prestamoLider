@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-Ar">
 
 <head>
     <meta charset="utf-8">
-    <title>Finanza - Financial Services Website Template</title>
+    <title>Préstamo Líder Chaco</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="img/favicon-96x96.png" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,42 +29,68 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function() {
+          // https://dashboard.emailjs.com/admin/account
+          emailjs.init({
+            publicKey: "LbWTBzX6vcXeZpMTq",
+          });
+      })();
+  </script>
+  <script type="text/javascript">
+      window.onload = function() {
+          document.getElementById('form-control').addEventListener('submit', function(event) {
+              event.preventDefault();
+              // these IDs from the previous steps
+              emailjs.sendForm('service_alcf8zs', 'template_r8x4g2q', this)
+              .then(() => {
+                      alert ('MENSAJE ENVIADO!');
+                      document.getElementById('form-control').reset();
+                  }, (error) => {
+                      alert('FAILED...', error);
+                  });
+          });
+      }
+  </script>
 </head>
 
 <body>
     <!-- Spinner Start -->
     <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
+        <div class="spinner-border text-success" role="status" style="width: 3rem; height: 3rem;"></div>
     </div>
     <!-- Spinner End -->
 
 
     <!-- Navbar Start -->
-    <div class="container-fluid fixed-top px-0 wow fadeIn" data-wow-delay="0.1s">
+   <div class="container-fluid fixed-top px-0 wow fadeIn" data-wow-delay="0.1s">
         <div class="top-bar row gx-0 align-items-center d-none d-lg-flex">
             <div class="col-lg-6 px-5 text-start">
-                <small><i class="fa fa-map-marker-alt text-primary me-2"></i>123 Street, New York, USA</small>
-                <small class="ms-4"><i class="fa fa-clock text-primary me-2"></i>9.00 am - 9.00 pm</small>
+                <small><i class="fa fa-map-marker-alt text-success me-2"></i>Av. Soberanía Nacional 2555</small>
+                <small class="ms-4"><i class="fa fa-clock text-success me-2"></i>9.00 am - 9.00 pm</small>
             </div>
             <div class="col-lg-6 px-5 text-end">
-                <small><i class="fa fa-envelope text-primary me-2"></i>info@example.com</small>
-                <small class="ms-4"><i class="fa fa-phone-alt text-primary me-2"></i>+012 345 6789</small>
+                <small><i class="fa fa-envelope text-success me-2"></i><a href="mailto:webimpulse.2025@gmail.com">Envíanos un correo</a></small>
+                <small class="ms-4"><i class="fab fa-whatsapp text-success me-2"></i><a href="https://walink.co/4ab14b">3625181576</a></small>
             </div>
         </div>
 
         <nav class="navbar navbar-expand-lg navbar-light py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
             <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
-                <h1 class="display-5 text-primary m-0">Finanza</h1>
+                <img class="img-fluid rounded" src="img/images.png" id="logo" alt="logo">
+                <h1 class="display-5 text-primary m-0"></h1>
             </a>
             <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto p-4 p-lg-0">
-                    <a href="index.html" class="nav-item nav-link">Home</a>
-                    <a href="about.html" class="nav-item nav-link active">About</a>
-                    <a href="service.html" class="nav-item nav-link">Services</a>
-                    <div class="nav-item dropdown">
+                    <a href="index.html" class="nav-item nav-link">Inicio</a>
+                    <a href="about.html" class="nav-item nav-link active">Sobre Nosotros</a>
+                    <a href="service.html" class="nav-item nav-link">Préstamos</a>
+                     <a href="project.html" class="nav-item nav-link">Instructivos</a>
+                <!--    <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                         <div class="dropdown-menu border-light m-0">
                             <a href="project.html" class="dropdown-item">Projects</a>
@@ -73,18 +99,18 @@
                             <a href="testimonial.html" class="dropdown-item">Testimonial</a>
                             <a href="404.html" class="dropdown-item">404 Page</a>
                         </div>
-                    </div>
-                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div> -->
+                    <a href="contact.html" class="nav-item nav-link">Contacto</a>
                 </div>
                 <div class="d-none d-lg-flex ms-2">
-                    <a class="btn btn-light btn-sm-square rounded-circle ms-3" href="">
+                    <a class="btn btn-light btn-sm-square rounded-circle ms-3" href="https://www.facebook.com/profile.php?id=61576783612740">
                         <small class="fab fa-facebook-f text-primary"></small>
                     </a>
-                    <a class="btn btn-light btn-sm-square rounded-circle ms-3" href="">
-                        <small class="fab fa-twitter text-primary"></small>
+                    <a class="btn btn-light btn-sm-square rounded-circle ms-3" href="https://www.instagram.com/prestamo_lider_chaco/?__pwa=1#">
+                        <small class="fab fa-instagram text-primary"></small>
                     </a>
-                    <a class="btn btn-light btn-sm-square rounded-circle ms-3" href="">
-                        <small class="fab fa-linkedin-in text-primary"></small>
+                    <a class="btn btn-light btn-sm-square rounded-circle ms-3" href="https://www.youtube.com/@PrestamoL%C3%ADderChaco">
+                        <small class="fab fa-youtube text-primary"></small>
                     </a>
                 </div>
             </div>
@@ -96,12 +122,11 @@
     <!-- Page Header Start -->
     <div class="container-fluid page-header mb-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container">
-            <h1 class="display-3 mb-4 animated slideInDown">About</h1>
+            <h1 class="display-3 mb-4 animated slideInDown">Sobre Nosotros</h1>
             <nav aria-label="breadcrumb animated slideInDown">
                 <ol class="breadcrumb mb-0">
-                    <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">About</li>
+                    <li class="breadcrumb-item"><a href="./index.html">Inicio</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Sobre Nosotros</li>
                 </ol>
             </nav>
         </div>
@@ -110,36 +135,36 @@
 
 
     <!-- About Start -->
-    <div class="container-xxl py-5">
+   <div class="container-xxl py-5">
         <div class="container">
             <div class="row g-4 align-items-end mb-4">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <img class="img-fluid rounded" src="img/about.jpg">
+                    <img class="img-fluid rounded" src="img/nostros.png">
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">About Us</p>
-                    <h1 class="display-5 mb-4">We Help Our Clients To Grow Their Business</h1>
-                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                    <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">Sobre Nosotros</p>
+                    <h1 class="display-5 mb-4">Apoyo Financiero Cuando Más Lo Necesitas</h1>
+                    <p class="mb-4">Somos un equipo humano enfocado en conseguirte un préstamo con las mejores condiciones y adaptado a tus necesidades, con nuestra ayuda será más fácil cumplir tus objetivos sin postergar más tiempo.</p>
                     <div class="border rounded p-4">
                         <nav>
                             <div class="nav nav-tabs mb-3" id="nav-tab" role="tablist">
-                                <button class="nav-link fw-semi-bold active" id="nav-story-tab" data-bs-toggle="tab" data-bs-target="#nav-story" type="button" role="tab" aria-controls="nav-story" aria-selected="true">Story</button>
-                                <button class="nav-link fw-semi-bold" id="nav-mission-tab" data-bs-toggle="tab" data-bs-target="#nav-mission" type="button" role="tab" aria-controls="nav-mission" aria-selected="false">Mission</button>
-                                <button class="nav-link fw-semi-bold" id="nav-vision-tab" data-bs-toggle="tab" data-bs-target="#nav-vision" type="button" role="tab" aria-controls="nav-vision" aria-selected="false">Vision</button>
+                                <button class="nav-link fw-semi-bold active" id="nav-story-tab" data-bs-toggle="tab" data-bs-target="#nav-story" type="button" role="tab" aria-controls="nav-story" aria-selected="true">Historia</button>
+                                <button class="nav-link fw-semi-bold" id="nav-mission-tab" data-bs-toggle="tab" data-bs-target="#nav-mission" type="button" role="tab" aria-controls="nav-mission" aria-selected="false">Misión</button>
+                                <button class="nav-link fw-semi-bold" id="nav-vision-tab" data-bs-toggle="tab" data-bs-target="#nav-vision" type="button" role="tab" aria-controls="nav-vision" aria-selected="false">Visión</button>
                             </div>
                         </nav>
                         <div class="tab-content" id="nav-tabContent">
                             <div class="tab-pane fade show active" id="nav-story" role="tabpanel" aria-labelledby="nav-story-tab">
-                                <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore.</p>
-                                <p class="mb-0">Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit</p>
+                                <p><b>Más de 10 años acompañando tus proyectos con confianza y transparencia</b></p>
+                                <p class="mb-0">Nuestra historia comenzó en 2014 en Posadas, Misiones, con un objetivo claro: ofrecer soluciones financieras accesibles, seguras y libres de complicaciones. Desde entonces, nos consolidamos como Préstamo Líder, una empresa que combina la calidez del trato humano con la eficiencia de la tecnología.</p>
                             </div>
                             <div class="tab-pane fade" id="nav-mission" role="tabpanel" aria-labelledby="nav-mission-tab">
-                                <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore.</p>
-                                <p class="mb-0">Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit</p>
+                                <p><b>Creciendo con vos</b></p>
+                                <p class="mb-0">En esta década de trayectoria, hemos ayudado a miles de clientes a hacer realidad sus metas: desde emprendimientos familiares hasta proyectos personales urgentes. Nos enorgullece ser tu aliado financiero, con procesos transparentes y un equipo dedicado a brindarte la mejor experiencia.</p>
                             </div>
                             <div class="tab-pane fade" id="nav-vision" role="tabpanel" aria-labelledby="nav-vision-tab">
-                                <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore.</p>
-                                <p class="mb-0">Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit</p>
+                                <p><b>Tu confianza nos impulsa. Tu éxito, nuestra razón de ser.</b></p>
+                                <p class="mb-0">Seguimos innovando para ofrecerte créditos rápidos, seguros y adaptados a tus necesidades, porque en Préstamo Líder creemos que cada paso financiero debe acercarte a tus sueños.</p>
                             </div>
                         </div>
                     </div>
@@ -154,8 +179,8 @@
                                     <i class="fa fa-times text-white"></i>
                                 </div>
                                 <div class="ps-3">
-                                    <h4>No Hidden Cost</h4>
-                                    <span>Clita erat ipsum lorem sit sed stet duo justo</span>
+                                    <h4>Sin costos ocultos</h4>
+                                    <span>Sin anticipos ni trámites engorrosos</span>
                                 </div>
                                 <div class="border-end d-none d-lg-block"></div>
                             </div>
@@ -169,8 +194,8 @@
                                     <i class="fa fa-users text-white"></i>
                                 </div>
                                 <div class="ps-3">
-                                    <h4>Dedicated Team</h4>
-                                    <span>Clita erat ipsum lorem sit sed stet duo justo</span>
+                                    <h4>Nuestro equipo, tu apoyo</h4>
+                                    <span>Atención online a todo el país </span>
                                 </div>
                                 <div class="border-end d-none d-lg-block"></div>
                             </div>
@@ -184,8 +209,8 @@
                                     <i class="fa fa-phone text-white"></i>
                                 </div>
                                 <div class="ps-3">
-                                    <h4>24/7 Available</h4>
-                                    <span>Clita erat ipsum lorem sit sed stet duo justo</span>
+                                    <h4>Online 24/7</h4>
+                                    <span>Soporte continuo, porque tus metas no esperan</span>
                                 </div>
                             </div>
                         </div>
@@ -198,31 +223,31 @@
 
 
     <!-- Facts Start -->
-    <div class="container-fluid facts my-5 py-5">
+      <div class="container-fluid facts my-5 py-5">
         <div class="container py-5">
             <div class="row g-5">
                 <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.1s">
                     <i class="fa fa-users fa-3x text-white mb-3"></i>
-                    <h1 class="display-4 text-white" data-toggle="counter-up">1234</h1>
-                    <span class="fs-5 text-white">Happy Clients</span>
+                    <h1 class="display-4 text-white" data-toggle="counter-up">40.000</h1>
+                    <span class="fs-5 text-white">Consultas </span>
                     <hr class="bg-white w-25 mx-auto mb-0">
                 </div>
                 <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.3s">
                     <i class="fa fa-check fa-3x text-white mb-3"></i>
-                    <h1 class="display-4 text-white" data-toggle="counter-up">1234</h1>
-                    <span class="fs-5 text-white">Projects Completed</span>
+                    <h1 class="display-4 text-white" data-toggle="counter-up">14.000</h1>
+                    <span class="fs-5 text-white">Créditos Otorgados</span>
                     <hr class="bg-white w-25 mx-auto mb-0">
                 </div>
                 <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.5s">
                     <i class="fa fa-users-cog fa-3x text-white mb-3"></i>
-                    <h1 class="display-4 text-white" data-toggle="counter-up">1234</h1>
-                    <span class="fs-5 text-white">Dedicated Staff</span>
+                    <h1 class="display-4 text-white" data-toggle="counter-up">170</h1>
+                    <span class="fs-5 text-white">Representantes</span>
                     <hr class="bg-white w-25 mx-auto mb-0">
                 </div>
                 <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.7s">
                     <i class="fa fa-award fa-3x text-white mb-3"></i>
-                    <h1 class="display-4 text-white" data-toggle="counter-up">1234</h1>
-                    <span class="fs-5 text-white">Awards Achieved</span>
+                    <h1 class="display-4 text-white" data-toggle="counter-up">10</h1>
+                    <span class="fs-5 text-white">Años de Trayectoria</span>
                     <hr class="bg-white w-25 mx-auto mb-0">
                 </div>
             </div>
@@ -232,18 +257,18 @@
 
 
     <!-- Team Start -->
-    <div class="container-xxl py-5">
+      <div class="container-xxl py-5">
         <div class="container">
             <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">Our Team</p>
-                <h1 class="display-5 mb-5">Exclusive Team</h1>
+                <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">Equipo</p>
+                <h1 class="display-5 mb-5">Nuestros Representantes</h1>
             </div>
-            <div class="row g-4">
+   <!--     <div class="row g-4">
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="team-item">
-                        <img class="img-fluid rounded" src="img/team-1.jpg" alt="">
+                        <img class="img-fluid rounded" src="img/equipo-2.jpeg" alt="">
                         <div class="team-text">
-                            <h4 class="mb-0">Kate Winslet</h4>
+                            <h4 class="mb-0">Alejandro Bermudez</h4>
                             <div class="team-social d-flex">
                                 <a class="btn btn-square rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
                                 <a class="btn btn-square rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
@@ -254,9 +279,9 @@
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="team-item">
-                        <img class="img-fluid rounded" src="img/team-2.jpg" alt="">
+                        <img class="img-fluid rounded" src="img/equipo-1.png" alt="">
                         <div class="team-text">
-                            <h4 class="mb-0">Jac Jacson</h4>
+                            <h4 class="mb-0">David Escurdia</h4>
                             <div class="team-social d-flex">
                                 <a class="btn btn-square rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
                                 <a class="btn btn-square rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
@@ -264,7 +289,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> 
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="team-item">
                         <img class="img-fluid rounded" src="img/team-3.jpg" alt="">
@@ -278,7 +303,27 @@
                         </div>
                     </div>
                 </div>
+            </div> -->
+            <div class="row">
+          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="team-item">
+              <img class="img-fluid rounded" src="img/equipo-2.jpeg"  id="equipo"  alt="">
+              <div class="team-text">
+                 <h4 class="mb-0">Alejandro Bermudez</h4>
+                 <h4 class="mb-0">Resistencia - Chaco</h4>
+                </div>
             </div>
+          </div>
+          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="team-item">
+              <img class="img-fluid rounded" src="img/equipo-1.png"  id="equipo"  alt="">
+              <div class="team-text">
+                 <h4 class="mb-0">David Escurdia</h4>
+                 <h4 class="mb-0">Misiones - Casa Central</h4>
+                </div>
+            </div>
+          </div>
+        </div>
         </div>
     </div>
     <!-- Team End -->

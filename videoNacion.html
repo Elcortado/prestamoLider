@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="es-Ar">
+
+<head>
+    <meta charset="utf-8">
+    <title>Préstamo Líder Chaco</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon-96x96.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">  
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function() {
+          // https://dashboard.emailjs.com/admin/account
+          emailjs.init({
+            publicKey: "LbWTBzX6vcXeZpMTq",
+          });
+      })();
+  </script>
+  <script type="text/javascript">
+      window.onload = function() {
+          document.getElementById('form-control').addEventListener('submit', function(event) {
+              event.preventDefault();
+              // these IDs from the previous steps
+              emailjs.sendForm('service_alcf8zs', 'template_r8x4g2q', this)
+              .then(() => {
+                      alert ('MENSAJE ENVIADO!');
+                      document.getElementById('form-control').reset();
+                  }, (error) => {
+                      alert('FAILED...', error);
+                  });
+          });
+      }
+  </script>
+</head>
+<!--
+
+TemplateMo 552 Video Catalog
+
+https://templatemo.com/tm-552-video-catalog
+
+-->
+<body>
+	 <!-- Spinner Start 
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-success" role="status" style="width: 3rem; height: 3rem;"></div>
+    </div>
+     Spinner End -->
+
+
+    <!-- Navbar Start 
+    <div class="container-fluid fixed-top px-0 wow fadeIn" data-wow-delay="0.1s">
+        <div class="top-bar row gx-0 align-items-center d-none d-lg-flex">
+            <div class="col-lg-6 px-5 text-start">
+                <small><i class="fa fa-map-marker-alt text-success me-2"></i>Av. Soberanía Nacional 2555</small>
+                <small class="ms-4"><i class="fa fa-clock text-success me-2"></i>9.00 am - 9.00 pm</small>
+            </div>
+            <div class="col-lg-6 px-5 text-end">
+                <small><i class="fa fa-envelope text-success me-2"></i><a href="mailto:webimpulse.2025@gmail.com">Envíanos un correo</a></small>
+                <small class="ms-4"><i class="fab fa-whatsapp text-success me-2"></i><a href="https://walink.co/4ab14b">3625181576</a></small>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-expand-lg navbar-light py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+            <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
+                <img class="img-fluid rounded" src="img/images.png" id="logo" alt="logo">
+                <h1 class="display-5 text-primary m-0"></h1>
+            </a>
+            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto p-4 p-lg-0">
+                    <a href="index.html" class="nav-item nav-link ">Inicio</a>
+                    <a href="about.html" class="nav-item nav-link">Sobre Nosotros</a>
+                    <a href="service.html" class="nav-item nav-link">Préstamos</a>
+                     <a href="project.html" class="nav-item nav-link">Instructivos</a>
+                 <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                        <div class="dropdown-menu border-light m-0">
+                            <a href="project.html" class="dropdown-item">Projects</a>
+                            <a href="feature.html" class="dropdown-item">Features</a>
+                            <a href="team.html" class="dropdown-item">Team Member</a>
+                            <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                            <a href="404.html" class="dropdown-item">404 Page</a>
+                        </div>
+                    </div> 
+                    <a href="contact.html" class="nav-item nav-link">Contacto</a>
+                </div>
+                <div class="d-none d-lg-flex ms-2">
+                    <a class="btn btn-light btn-sm-square rounded-circle ms-3" href="https://www.facebook.com/profile.php?id=61576783612740">
+                        <small class="fab fa-facebook-f text-primary"></small>
+                    </a>
+                    <a class="btn btn-light btn-sm-square rounded-circle ms-3" href="https://www.instagram.com/prestamo_lider_chaco/?__pwa=1#">
+                        <small class="fab fa-instagram text-primary"></small>
+                    </a>
+                    <a class="btn btn-light btn-sm-square rounded-circle ms-3" href="https://www.youtube.com/@PrestamoL%C3%ADderChaco">
+                        <small class="fab fa-youtube text-primary"></small>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </div> 
+     Navbar End -->
+
+			<!-- Header image -->
+         <div class="container-fluid page-header mb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container">
+            <h1 class="display-3 mb-4 animated slideInDown">Préstamos</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb mb-0">
+                    <li class="breadcrumb-item"><a href="./index.html">Inicio</a></li>
+                   <li class="breadcrumb-item active" aria-current="page">Préstamos</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+		<!-- Page content -->
+		<div class="container-fluid">
+			<div class="mx-auto tm-content-container">
+				<main>
+					<div class="row mb-5 pb-4">
+						<div class="col-12">
+							<!-- Video player 1422x800 -->
+							<video width="1422" height="800" controls autoplay>
+							  <source src="https://youtu.be/NDpwh0pCXDw?list=RDNDpwh0pCXDw" type="video/mp4">							  
+							Your browser does not support the video tag.
+							</video>
+						</div>
+					</div>
+					<div class="row mb-5 pb-5">
+						<div class="col-xl-8 col-lg-7">
+							<!-- Video description -->
+							<div class="tm-video-description-box">
+								<h2 class="mb-5 tm-video-title">Mauris dapibus urna nec ipsum posuere</h2>
+								<p class="mb-4">Cras dictum pretium est, et imperdiet ex. Fusce vitae vestibulum ipsum. Maecenas ultricies ipsum a urna ullamcorper, id interdum est blandit. Vivamus sit amet justo sed erat iaculis consequat. Nulla suscipit posuere lectus ut venenatis. Proin sed orci eget tellus euismod vulputate eu eu arcu.</p>
+								<p class="mb-4">Etiam a bibendum lorem. Curabitur ac bibendum odio. Vivamus euismod dui mauris, ut tincidunt mi congue quis. Phasellus luctus orci dolor, a luctus massa tincidunt vitae. Integer sit amet odio id libero tincidunt dignissim in eget arcu.</p>
+								<p class="mb-4">Aliquam tristique ut magna sit amet tincidunt. Sed tempor tellus nulla, molestie luctus lectus tincidunt id. Cras euismod leo a urna placerat, vel blandit turpis fermentum.</p>	
+							</div>							
+						</div>
+						<div class="col-xl-4 col-lg-5">
+							<!-- Share box -->
+							<div class="tm-bg-gray tm-share-box">
+								<h6 class="tm-share-box-title mb-4">Share this video</h6>
+								<div class="mb-5 d-flex">
+									<a href="" class="tm-bg-white tm-share-button"><i class="fab fa-facebook"></i></a>
+									<a href="" class="tm-bg-white tm-share-button"><i class="fab fa-twitter"></i></a>
+									<a href="" class="tm-bg-white tm-share-button"><i class="fab fa-pinterest"></i></a>
+									<a href="" class="tm-bg-white tm-share-button"><i class="far fa-envelope"></i></a>
+								</div>
+								<p class="mb-4">Author: <a href="https://templatemo.com" class="tm-text-link">TemplateMo</a></p>
+								<a href="#" class="tm-bg-white px-5 mb-4 d-inline-block tm-text-primary tm-likes-box tm-liked">
+									<i class="fas fa-heart mr-3 tm-liked-icon"></i>
+									<i class="far fa-heart mr-3 tm-not-liked-icon"></i>
+									<span id="tm-likes-count">486 likes</span>
+								</a>
+								<div>
+									<button class="btn btn-primary p-0 tm-btn-animate tm-btn-download tm-icon-download"><span>Download Video</span></button>	
+								</div>								
+							</div>
+						</div>
+					</div>
+					<div class="row pt-4 pb-5">
+						<div class="col-12">
+							<h2 class="mb-5 tm-text-primary">Related Videos for You</h2>
+							<div class="row tm-catalog-item-list">
+		                        <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
+		                            <div class="position-relative tm-thumbnail-container">
+		                                <img src="img/tn-01.jpg" alt="Image" class="img-fluid tm-catalog-item-img">    
+		                                <a href="video-page.html" class="position-absolute tm-img-overlay">
+		                                    <i class="fas fa-play tm-overlay-icon"></i>
+		                                </a>
+		                            </div>    
+		                            <div class="p-3 tm-catalog-item-description">
+		                                <h3 class="tm-text-gray text-center tm-catalog-item-title">Nam tincidunt consectetur</h3>		                                
+		                            </div>
+		                        </div>
+		                        <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
+		                            <div class="position-relative tm-thumbnail-container">
+		                                <img src="img/tn-02.jpg" alt="Image" class="img-fluid tm-catalog-item-img">    
+		                                <a href="video-page.html" class="position-absolute tm-img-overlay">
+		                                    <i class="fas fa-play tm-overlay-icon"></i>
+		                                </a>
+		                            </div>
+		                            <div class="p-3 tm-catalog-item-description">
+		                                <h3 class="tm-text-gray text-center tm-catalog-item-title">Praesent posuere rhoncus</h3>		                                
+		                            </div>
+		                        </div>
+		                        <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
+		                            <div class="position-relative tm-thumbnail-container">
+		                                <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">    
+		                                <a href="video-page.html" class="position-absolute tm-img-overlay">
+		                                    <i class="fas fa-play tm-overlay-icon"></i>
+		                                </a>
+		                            </div>                            
+		                            <div class="p-3 tm-catalog-item-description">
+		                                <h3 class="tm-text-gray text-center tm-catalog-item-title">Turpis massa aliquam</h3>		                                
+		                            </div>
+		                        </div>
+		                        <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
+		                            <div class="position-relative tm-thumbnail-container">
+		                                <img src="img/tn-04.jpg" alt="Image" class="img-fluid tm-catalog-item-img">    
+		                                <a href="video-page.html" class="position-absolute tm-img-overlay">
+		                                    <i class="fas fa-play tm-overlay-icon"></i>
+		                                </a>
+		                            </div>    
+		                            <div class="p-3 tm-catalog-item-description">
+		                                <h3 class="tm-text-gray text-center tm-catalog-item-title">Nam tincidunt consectetur</h3>		                                
+		                            </div>
+		                        </div>
+		                        <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
+		                            <div class="position-relative tm-thumbnail-container">
+		                                <img src="img/tn-05.jpg" alt="Image" class="img-fluid tm-catalog-item-img">    
+		                                <a href="video-page.html" class="position-absolute tm-img-overlay">
+		                                    <i class="fas fa-play tm-overlay-icon"></i>
+		                                </a>
+		                            </div>
+		                            <div class="p-3 tm-catalog-item-description">
+		                                <h3 class="tm-text-gray text-center tm-catalog-item-title">Praesent posuere rhoncus</h3>		                                
+		                            </div>
+		                        </div>
+		                        <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
+		                            <div class="position-relative tm-thumbnail-container">
+		                                <img src="img/tn-06.jpg" alt="Image" class="img-fluid tm-catalog-item-img">    
+		                                <a href="video-page.html" class="position-absolute tm-img-overlay">
+		                                    <i class="fas fa-play tm-overlay-icon"></i>
+		                                </a>
+		                            </div>                            
+		                            <div class="p-3 tm-catalog-item-description">
+		                                <h3 class="tm-text-gray text-center tm-catalog-item-title">Turpis massa aliquam</h3>		                                
+		                            </div>
+		                        </div>
+		                    </div>
+						</div>
+					</div>
+				</main>
+
+				<!-- Subscribe form and footer links -->
+                <div class="row mt-5 pt-3">
+                    <div class="col-xl-6 col-lg-12 mb-4">
+                        <div class="tm-bg-gray p-5 h-100">
+                            <h3 class="tm-text-primary mb-3">Do you want to get our latest updates?</h3>
+                            <p class="mb-5">Please subscribe our newsletter for upcoming new videos and latest information about our
+                                work. Thank you.</p>
+                            <form action="" method="GET" class="tm-subscribe-form">
+                                <input type="text" name="email" placeholder="Your Email..." required>
+                                <button type="submit" class="btn rounded-0 btn-primary tm-btn-small">Subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12 mb-4">
+                        <div class="p-5 tm-bg-gray">
+                            <h3 class="tm-text-primary mb-4">Quick Links</h3>
+                            <ul class="list-unstyled tm-footer-links">
+                                <li><a href="#">Duis bibendum</a></li>
+                                <li><a href="#">Purus non dignissim</a></li>
+                                <li><a href="#">Sapien metus gravida</a></li>
+                                <li><a href="#">Eget consequat</a></li>
+                                <li><a href="#">Praesent eu pulvinar</a></li>
+                            </ul>    
+                        </div>                        
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12 mb-4">
+                        <div class="p-5 tm-bg-gray h-100">
+                            <h3 class="tm-text-primary mb-4">Our Pages</h3>
+                            <ul class="list-unstyled tm-footer-links">
+                                <li><a href="#">Our Videos</a></li>
+                                <li><a href="#">License Terms</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">Privacy Policies</a></li>
+                            </ul>
+                        </div>                        
+                    </div>
+                </div> <!-- row -->
+
+                <footer class="row pt-5">
+                    <div class="col-12">
+                        <p class="text-right">Copyright 2020 The Video Catalog Company 
+                        
+                        - Designed by <a href="https://templatemo.com" rel="nofollow" target="_parent">TemplateMo</a></p>
+                    </div>
+                </footer>
+			</div> <!-- .tm-content-container -->
+		</div>
+	</div>
+
+	<script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+    	$(document).ready(function() {
+    		$('.tm-likes-box').click(function(e) {
+    			e.preventDefault();
+    			$(this).toggleClass('tm-liked');
+
+    			if($(this).hasClass('tm-liked')) {
+    				$('#tm-likes-count').html('486 likes');
+    			} else {
+    				$('#tm-likes-count').html('485 likes');
+    			}
+    		});
+    	});
+    </script>
+</body>
+</html>

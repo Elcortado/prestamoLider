@@ -1,280 +1,494 @@
 <!DOCTYPE html>
 <html lang="es-Ar">
-
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
     <title>Préstamo Líder Chaco</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
 
     <!-- Favicon -->
-    <link href="img/favicon-96x96.png" rel="icon">
+    <link href="img/favicon-96x96.png" rel="icon" />
 
     <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">  
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
 
     <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
 
     <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <link href="css/style.css" rel="stylesheet" />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
     <script type="text/javascript">
-      (function() {
-          // https://dashboard.emailjs.com/admin/account
-          emailjs.init({
-            publicKey: "LbWTBzX6vcXeZpMTq",
-          });
+      (function () {
+        // https://dashboard.emailjs.com/admin/account
+        emailjs.init({
+          publicKey: "LbWTBzX6vcXeZpMTq",
+        });
       })();
-  </script>
-  <script type="text/javascript">
-      window.onload = function() {
-          document.getElementById('form-control').addEventListener('submit', function(event) {
-              event.preventDefault();
-              // these IDs from the previous steps
-              emailjs.sendForm('service_alcf8zs', 'template_r8x4g2q', this)
-              .then(() => {
-                      alert ('MENSAJE ENVIADO!');
-                      document.getElementById('form-control').reset();
-                  }, (error) => {
-                      alert('FAILED...', error);
-                  });
+    </script>
+    <script type="text/javascript">
+      window.onload = function () {
+        document
+          .getElementById("form-control")
+          .addEventListener("submit", function (event) {
+            event.preventDefault();
+            // these IDs from the previous steps
+            emailjs.sendForm("service_alcf8zs", "template_r8x4g2q", this).then(
+              () => {
+                alert("MENSAJE ENVIADO!");
+                document.getElementById("form-control").reset();
+              },
+              (error) => {
+                alert("FAILED...", error);
+              }
+            );
           });
-      }
-  </script>
-</head>
+      };
+    </script>
+  </head>
 
-<body>
-    <!-- Spinner Start -->
+  <body>
+    <!-- Spinner Start 
     <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-border text-success" role="status" style="width: 3rem; height: 3rem;"></div>
     </div>
-    <!-- Spinner End -->
-
+     Spinner End -->
 
     <!-- Navbar Start -->
-    <div class="container-fluid fixed-top px-0 wow fadeIn" data-wow-delay="0.1s">
-        <div class="top-bar row gx-0 align-items-center d-none d-lg-flex">
-            <div class="col-lg-6 px-5 text-start">
-                <small><i class="fa fa-map-marker-alt text-success me-2"></i>Av. Soberanía Nacional 2555</small>
-                <small class="ms-4"><i class="fa fa-clock text-success me-2"></i>9.00 am - 9.00 pm</small>
-            </div>
-            <div class="col-lg-6 px-5 text-end">
-                <small><i class="fa fa-envelope text-success me-2"></i><a href="mailto:webimpulse.2025@gmail.com">Envíanos un correo</a></small>
-                <small class="ms-4"><i class="fab fa-whatsapp text-success me-2"></i><a href="https://walink.co/4ab14b">3625181576</a></small>
-            </div>
+    <div
+      class="container-fluid fixed-top px-0 wow fadeIn"
+      data-wow-delay="0.1s"
+    >
+      <div class="top-bar row gx-0 align-items-center d-none d-lg-flex">
+        <div class="col-lg-6 px-5 text-start">
+          <small
+            ><i class="fa fa-map-marker-alt text-success me-2"></i>Av. Soberanía
+            Nacional 2555</small
+          >
+          <small class="ms-4"
+            ><i class="fa fa-clock text-success me-2"></i>9.00 am - 9.00
+            pm</small
+          >
         </div>
+        <div class="col-lg-6 px-5 text-end">
+          <small
+            ><i class="fa fa-envelope text-success me-2"></i
+            ><a href="mailto:webimpulse.2025@gmail.com"
+              >Envíanos un correo</a
+            ></small
+          >
+          <small class="ms-4"
+            ><i class="fab fa-whatsapp text-success me-2"></i
+            ><a href="https://walink.co/4ab14b">3625181576</a></small
+          >
+        </div>
+      </div>
 
-        <nav class="navbar navbar-expand-lg navbar-light py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
-            <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
-                <img class="img-fluid rounded" src="img/images.png" id="logo" alt="logo">
-                <h1 class="display-5 text-primary m-0"></h1>
+      <nav
+        class="navbar navbar-expand-lg navbar-light py-lg-0 px-lg-5 wow fadeIn"
+        data-wow-delay="0.1s"
+      >
+        <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
+          <img
+            class="img-fluid rounded"
+            src="img/images.png"
+            id="logo"
+            alt="logo"
+          />
+          <h1 class="display-5 text-primary m-0"></h1>
+        </a>
+        <button
+          type="button"
+          class="navbar-toggler me-4"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav ms-auto p-4 p-lg-0">
+            <a href="index.html" class="nav-item nav-link">Inicio</a>
+            <a href="about.html" class="nav-item nav-link">Sobre Nosotros</a>
+            <a href="service.html" class="nav-item nav-link">Préstamos</a>
+            <a href="#" class="nav-item nav-link active">Instructivos</a>
+
+            <a href="contact.html" class="nav-item nav-link">Contacto</a>
+          </div>
+          <div class="d-none d-lg-flex ms-2">
+            <a
+              class="btn btn-light btn-sm-square rounded-circle ms-3"
+              href="https://www.facebook.com/profile.php?id=61576783612740"
+            >
+              <small class="fab fa-facebook-f text-primary"></small>
             </a>
-            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav ms-auto p-4 p-lg-0">
-                    <a href="index.html" class="nav-item nav-link">Inicio</a>
-                    <a href="about.html" class="nav-item nav-link">Sobre Nosotros</a>
-                    <a href="./service.html" class="nav-item nav-link">Préstamos</a>
-                     <a href="#" class="nav-item nav-link active">Instructivos</a>
-                <!--    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                        <div class="dropdown-menu border-light m-0">
-                            <a href="project.html" class="dropdown-item">Projects</a>
-                            <a href="feature.html" class="dropdown-item">Features</a>
-                            <a href="team.html" class="dropdown-item">Team Member</a>
-                            <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                            <a href="404.html" class="dropdown-item">404 Page</a>
-                        </div>
-                    </div> -->
-                    <a href="contact.html" class="nav-item nav-link">Contacto</a>
-                </div>
-                <div class="d-none d-lg-flex ms-2">
-                    <a class="btn btn-light btn-sm-square rounded-circle ms-3" href="https://www.facebook.com/profile.php?id=61576783612740">
-                        <small class="fab fa-facebook-f text-primary"></small>
-                    </a>
-                    <a class="btn btn-light btn-sm-square rounded-circle ms-3" href="https://www.instagram.com/prestamo_lider_chaco/?__pwa=1#">
-                        <small class="fab fa-instagram text-primary"></small>
-                    </a>
-                    <a class="btn btn-light btn-sm-square rounded-circle ms-3" href="https://www.youtube.com/@PrestamoL%C3%ADderChaco">
-                        <small class="fab fa-youtube text-primary"></small>
-                    </a>
-                </div>
-            </div>
-        </nav>
+            <a
+              class="btn btn-light btn-sm-square rounded-circle ms-3"
+              href="https://www.instagram.com/prestamo_lider_chaco/?__pwa=1#"
+            >
+              <small class="fab fa-instagram text-primary"></small>
+            </a>
+            <a
+              class="btn btn-light btn-sm-square rounded-circle ms-3"
+              href="https://www.youtube.com/@PrestamoL%C3%ADderChaco"
+            >
+              <small class="fab fa-youtube text-primary"></small>
+            </a>
+          </div>
+        </div>
+      </nav>
     </div>
     <!-- Navbar End -->
 
-    <!-- Page Header Start -->
-    <div class="container-fluid page-header mb-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container">
-            <h1 class="display-3 mb-4 animated slideInDown">Instructivos</h1>
-            <nav aria-label="breadcrumb animated slideInDown">
-                <ol class="breadcrumb mb-0">
-                    <li class="breadcrumb-item"><a href="./index.html">Inicio</a></li>
-                   <li class="breadcrumb-item active" aria-current="page">Instructivos</li>
-                </ol>
-            </nav>
-        </div>
+    <!-- Header image -->
+    <div
+      class="container-fluid page-header mb-5 wow fadeIn"
+      data-wow-delay="0.1s"
+    >
+      <div class="container">
+        <h1 class="display-3 mb-4 animated slideInDown">Videos Instructivos</h1>
+        <nav aria-label="breadcrumb animated slideInDown">
+          <ol class="breadcrumb mb-0">
+            <li class="breadcrumb-item"><a href="./index.html">Inicio</a></li>
+            <li class="breadcrumb-item active" aria-current="page">
+              Instructivos
+            </li>
+          </ol>
+        </nav>
+      </div>
     </div>
-    <!-- Page Header End -->
 
-    <!-- Projects Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">Videos Instructivos</p>
-                <h1 class="display-5 mb-5"></h1>
-            </div>
-            <div class="owl-carousel project-carousel wow fadeInUp" data-wow-delay="0.3s">
-                <div class="project-item pe-5 pb-5">
-                    <div class="project-img mb-3">
-                        <img class="img-fluid rounded" src="img/service-1.jpg" alt="">
-                        <a href=""><i class="fa fa-link fa-3x text-primary"></i></a>
-                    </div>
-                    <div class="project-title">
-                        <h4 class="mb-0">Financial Planning</h4>
-                    </div>
-                </div>
-                <div class="project-item pe-5 pb-5">
-                    <div class="project-img mb-3">
-                        <img class="img-fluid rounded" src="img/service-2.jpg" alt="">
-                        <a href=""><i class="fa fa-link fa-3x text-primary"></i></a>
-                    </div>
-                    <div class="project-title">
-                        <h4 class="mb-0">Cash Investment</h4>
-                    </div>
-                </div>
-                <div class="project-item pe-5 pb-5">
-                    <div class="project-img mb-3">
-                        <img class="img-fluid rounded" src="img/service-3.jpg" alt="">
-                        <a href=""><i class="fa fa-link fa-3x text-primary"></i></a>
-                    </div>
-                    <div class="project-title">
-                        <h4 class="mb-0">Financial Consultancy</h4>
-                    </div>
-                </div>
-                <div class="project-item pe-5 pb-5">
-                    <div class="project-img mb-3">
-                        <img class="img-fluid rounded" src="img/service-4.jpg" alt="">
-                        <a href=""><i class="fa fa-link fa-3x text-primary"></i></a>
-                    </div>
-                    <div class="project-title">
-                        <h4 class="mb-0">Business Loans</h4>
-                    </div>
-                </div>
-            </div>
+    <section class="py-5 text-center">
+      <div class="row py-lg-5">
+        <div class="col-lg-10 col-md-8 mx-auto">
+          <h1>¿Cómo Obtener Tus Movimientos Bancarios?</h1>
+          <p class="lead text-body-secondary">
+            En Préstamo Líder nos encanta simplificar tu vida financiera.
+
+Entendemos que descargar tus movimientos bancarios puede parecer complicado... ¡pero hoy eso cambia!
+En ésta sección encontrarás guías y videos tutoriales fáciles y prácticos, diseñados para resolver tus dudas al instante.
+¡Olvídate del estrés y prepárate para gestionar tus trámites con confianza!<br>
+¿Tienes preguntas? ¡Estamos aquí para ayudarte! Un asesor te atenderá personalmente.
+          </p>
         </div>
-    </div>
-    <!-- Projects End -->
-        
+      </div>
+    </section>
+<main>
+  <div class="instruc">
+    <figure class="text-center">
+      <blockquote class="blockquote">
+        <p><b>VER HOME BANKING EN EL CELULAR COMO SI FUERA UNA PC</b></p>
+      </blockquote>
+    </figure>
 
-  <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-light footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-4">Contactanos</h4>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Av. Soberanía Nacional 2555 - Resistencia - Chaco</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+54 3625181576</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>prestamoliderchaco@gmail.com</p>
-                <!--    <div class="d-flex pt-2">
+    <div class="video-contenedor">
+      <iframe
+        width="769"
+        height="433"
+        src="https://www.youtube.com/embed/6sQu4aTFVXE"
+        title="Home Banking desde el navegador- Modo sitio para computadora"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+    </div>
+    </div>
+    <div class="instruc">
+    <figure class="text-center">
+      <blockquote class="blockquote">
+        <p><b>BANCO NACIÓN</b></p>
+      </blockquote>
+    </figure>
+
+    <div class="video-contenedor">
+      <iframe width="769" height="433" src="https://www.youtube.com/embed/21GQ-mcNMCU" title="Cómo Descargar Movimientos del Banco Nación de los Últimos 3 Meses" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    </div>
+    <div class="instruc">
+    <figure class="text-center">
+      <blockquote class="blockquote">
+        <p><b>BANCO MACRO</b></p>
+      </blockquote>
+    </figure>
+
+    <div class="video-contenedor">
+      <iframe width="769" height="433" src="https://www.youtube.com/embed/XVwGO0PXkYQ" title="Descarga tus Movimientos Bancarios del Banco Macro" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    </div>
+    <div class="instruc">
+    <figure class="text-center">
+      <blockquote class="blockquote">
+        <p><b>BANCO GALICIA</b></p>
+      </blockquote>
+    </figure>
+
+    <div class="video-contenedor">
+      <iframe width="769" height="433" src="https://www.youtube.com/embed/r9PTRrpk8Ek" title="Descarga tus Movimientos del Banco Galicia de los Últimos 3 Meses" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    </div>
+    <div class="instruc">
+    <figure class="text-center">
+      <blockquote class="blockquote">
+        <p><b>BANCO SUPERVIELLE</b></p>
+      </blockquote>
+    </figure>
+
+    <div class="video-contenedor">
+     <iframe width="769" height="433" src="https://www.youtube.com/embed/65Yv_ecAv5Q" title="Descargar Movimientos Bancarios del Banco Supervielle en 3 Pasos Fáciles" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    </div>
+    <div class="instruc">
+    <figure class="text-center">
+      <blockquote class="blockquote">
+        <p><b>BANCOR</b></p>
+      </blockquote>
+    </figure>
+
+    <div class="video-contenedor">
+     <iframe width="769" height="433" src="https://www.youtube.com/embed/gd4SI28a8tg" title="Cómo Descargar Movimientos Bancarios en Bancor: Guía Práctica" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    </div>
+    <div class="instruc">
+    <figure class="text-center">
+      <blockquote class="blockquote">
+        <p><b>BANCO PATAGONIA</b></p>
+      </blockquote>
+    </figure>
+
+    <div class="video-contenedor">
+    <iframe width="769" height="433" src="https://www.youtube.com/embed/Bn1h8Bijmuc" title="Tutorial: Descargar Movimientos Bancarios del Banco Patagonia en 3 Sencillos Pasos" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    </div>
+    <div class="instruc">
+    <figure class="text-center">
+      <blockquote class="blockquote">
+        <p><b>BANCO PROVINCIA</b></p>
+      </blockquote>
+    </figure>
+
+    <div class="video-contenedor">
+     <iframe width="769" height="433" src="https://www.youtube.com/embed/ToI5NbhcBno" title="Descarga tus Movimientos Bancarios del Banco Provincia: Tutorial Paso a Paso" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    </div>
+    <div class="instruc">
+    <figure class="text-center">
+      <blockquote class="blockquote">
+        <p><b>BANCO SANTANDER RIO</b></p>
+      </blockquote>
+    </figure>
+
+    <div class="video-contenedor">
+      <iframe width="769" height="433" src="https://www.youtube.com/embed/cuhEImdnDuo" title="Tutorial: Cómo Descargar Movimientos Bancarios en Santander Río en 3 Pasos" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    </div><div class="instruc">
+    <figure class="text-center">
+      <blockquote class="blockquote">
+        <p><b>BANCO DE SANTA FE</b></p>
+      </blockquote>
+    </figure>
+
+    <div class="video-contenedor">
+<iframe width="769" height="433" src="https://www.youtube.com/embed/_HTW74F0uKQ" title="Descargar Movimientos Bancarios en Banco de Santa Fe: Guía Práctica" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>    </div>
+    </div>
+    <div class="instruc">
+    <figure class="text-center">
+      <blockquote class="blockquote">
+        <p><b>BANCO HSBC</b></p>
+      </blockquote>
+    </figure>
+
+    <div class="video-contenedor">
+<iframe width="769" height="433" src="https://www.youtube.com/embed/ja_5olUCcQ8" title="Tutorial: Descargar Movimientos Bancarios en HSBC en 3 Sencillos Pasos" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>    </div>
+    </div>
+    <div class="instruc">
+    <figure class="text-center">
+      <blockquote class="blockquote">
+        <p><b>BANCO BBVA</b></p>
+      </blockquote>
+    </figure>
+
+    <div class="video-contenedor">
+      <iframe width="769" height="433" src="https://www.youtube.com/embed/IwI_VLofGlU" title="Guía Práctica: Cómo Descargar Movimientos Bancarios en BBVA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    </div>
+    <div class="instruc">
+    <figure class="text-center">
+      <blockquote class="blockquote">
+        <p><b>BANCO HIPOTECARIO</b></p>
+      </blockquote>
+    </figure>
+
+    <div class="video-contenedor">
+<iframe width="769" height="433" src="https://www.youtube.com/embed/X-ANX8X8PTs" title="Tutorial: Descargar Movimientos Bancarios en Banco Hipotecario en 3 Pasos" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>    </div>
+    </div>
+    <div class="instruc">
+    <figure class="text-center">
+      <blockquote class="blockquote">
+        <p><b>BANCO ICBC</b></p>
+      </blockquote>
+    </figure>
+
+    <div class="video-contenedor">
+<iframe width="769" height="433" src="https://www.youtube.com/embed/4JclV7Zub4A" title="Cómo Descargar Movimientos Bancarios en ICBC: Tutorial Práctico" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>    </div>
+    </div>
+
+</main>
+    <!-- Footer Start -->
+    <div
+      class="container-fluid bg-dark text-light footer mt-5 py-5 wow fadeIn"
+      data-wow-delay="0.1s"
+    >
+      <div class="container py-5">
+        <div class="row g-5">
+          <div class="col-lg-3 col-md-6">
+            <h4 class="text-white mb-4">Contactanos</h4>
+            <p class="mb-2">
+              <i class="fa fa-map-marker-alt me-3"></i>Av. Soberanía Nacional
+              2555 - Resistencia - Chaco
+            </p>
+            <p class="mb-2">
+              <i class="fa fa-phone-alt me-3"></i>+54 3625181576
+            </p>
+            <p class="mb-2">
+              <i class="fa fa-envelope me-3"></i>prestamoliderchaco@gmail.com
+            </p>
+            <!--    <div class="d-flex pt-2">
                         <a class="btn btn-square btn-outline-light rounded-circle me-2" href="https://www.instagram.com/prestamo_lider_chaco/?__pwa=1#"><i class="fab fa-instagram"></i></a>
                         <a class="btn btn-square btn-outline-light rounded-circle me-2" href="https://www.facebook.com/profile.php?id=61576783612740"><i class="fab fa-facebook-f"></i></a>
                         <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i class="fab fa-youtube"></i></a>
                     </div> -->
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-4">Préstamos</h4>
-                    <a class="btn btn-link" href="./service.html">Empleados Nacionales</a>
-                    <a class="btn btn-link" href="./service.html">Empleados Provinciales</a>
-                    <a class="btn btn-link" href="./service.html">Jubilados Y Pensionados</a>
-                    <a class="btn btn-link" href="./service.html">AUH</a>
-                
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-4">Categorías</h4>
-                    <a class="btn btn-link" href="./about.html">Sobre Nosotros</a>
-                    <a class="btn btn-link" href="./contact.html">Contacto</a>
-                    <a class="btn btn-link" href="./service.html">Préstamos</a>
-                    <a class="btn btn-link" href="./project.html">Instructivos</a>
-                    
-                    
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-4">Seguínos</h4>
-                    <p>¡Conéctate con nosotros! Síguenos en redes y sé parte de nuestra comunidad.</p>
-                     <div class="d-flex pt-2">
-                        <a class="btn btn-square btn-outline-light rounded-circle me-2" href="https://www.instagram.com/prestamo_lider_chaco/?__pwa=1#"><i class="fab fa-instagram"></i></a>
-                        <a class="btn btn-square btn-outline-light rounded-circle me-2" href="https://www.facebook.com/profile.php?id=61576783612740"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-outline-light rounded-circle me-2" href="https://www.youtube.com/@PrestamoL%C3%ADderChaco"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h4 class="text-white mb-4">Préstamos</h4>
+            <a class="btn btn-link" href="./service.html"
+              >Empleados Nacionales</a
+            >
+            <a class="btn btn-link" href="./service.html"
+              >Empleados Provinciales</a
+            >
+            <a class="btn btn-link" href="./service.html"
+              >Jubilados Y Pensionados</a
+            >
+            <a class="btn btn-link" href="./service.html">AUH</a>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h4 class="text-white mb-4">Categorías</h4>
+            <a class="btn btn-link" href="./about.html">Sobre Nosotros</a>
+            <a class="btn btn-link" href="./contact.html">Contacto</a>
+            <a class="btn btn-link" href="./service.html">Préstamos</a>
+            <a class="btn btn-link" href="./project.html">Instructivos</a>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h4 class="text-white mb-4">Seguínos</h4>
+            <p>
+              ¡Conéctate con nosotros! Síguenos en redes y sé parte de nuestra
+              comunidad.
+            </p>
+            <div class="d-flex pt-2">
+              <a
+                class="btn btn-square btn-outline-light rounded-circle me-2"
+                href="https://www.instagram.com/prestamo_lider_chaco/?__pwa=1#"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a
+                class="btn btn-square btn-outline-light rounded-circle me-2"
+                href="https://www.facebook.com/profile.php?id=61576783612740"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                class="btn btn-square btn-outline-light rounded-circle me-2"
+                href="https://www.youtube.com/@PrestamoL%C3%ADderChaco"
+                ><i class="fab fa-youtube"></i
+              ></a>
             </div>
+          </div>
         </div>
+      </div>
     </div>
     <!-- Footer End -->
 
-
     <!-- Copyright Start -->
     <div class="container-fluid copyright py-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    &copy; <a class="border-bottom" href="#">Préstamo Líder Chaco</a>, Todos Los Derechos Reservados.
-                </div>
-                <div class="col-md-6 text-center text-md-end">
-                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                    Designed By <a class="border-bottom" href="https://webimpulse.vercel.app/">Web Impulse</a>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+            &copy; <a class="border-bottom" href="#">Préstamo Líder Chaco</a>,
+            Todos Los Derechos Reservados.
+          </div>
+          <div class="col-md-6 text-center text-md-end">
+            <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+            Designed By
+            <a class="border-bottom" href="https://webimpulse.vercel.app/"
+              >Web Impulse</a
+            >
+          </div>
         </div>
+      </div>
     </div>
     <!-- Copyright End -->
 
-
     <!-- Back to Top -->
-    <a href="https://walink.co/4ab14b" class="btn btn-lg btn-success btn-lg-square rounded-circle back-to-top"><i class="fab fa-whatsapp"></i></a>
-
+    <a
+      href="https://walink.co/4ab14b"
+      class="btn btn-lg btn-success btn-lg-square rounded-circle back-to-top"
+      ><i class="fab fa-whatsapp"></i
+    ></a>
 
     <!-- JavaScript Libraries -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
     <script type="text/javascript">
-      (function() {
-          // https://dashboard.emailjs.com/admin/account
-          emailjs.init({
-            publicKey: "LbWTBzX6vcXeZpMTq",
-          });
+      (function () {
+        // https://dashboard.emailjs.com/admin/account
+        emailjs.init({
+          publicKey: "LbWTBzX6vcXeZpMTq",
+        });
       })();
-  </script>
-  <script type="text/javascript">
-      window.onload = function() {
-          document.getElementById('contact-form').addEventListener('submit', function(event) {
-              event.preventDefault();
-              // these IDs from the previous steps
-              emailjs.sendForm('service_alcf8zs', 'template_r8x4g2q', this)
-              .then(() => {
-                      alert ('MENSAJE ENVIADO!');
-                      document.getElementById('contact-form').reset();
-                  }, (error) => {
-                      alert('FAILED...', error);
-                  });
+    </script>
+    <script type="text/javascript">
+      window.onload = function () {
+        document
+          .getElementById("contact-form")
+          .addEventListener("submit", function (event) {
+            event.preventDefault();
+            // these IDs from the previous steps
+            emailjs.sendForm("service_alcf8zs", "template_r8x4g2q", this).then(
+              () => {
+                alert("MENSAJE ENVIADO!");
+                document.getElementById("contact-form").reset();
+              },
+              (error) => {
+                alert("FAILED...", error);
+              }
+            );
           });
-      }
-  </script>
+      };
+    </script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="lib/wow/wow.min.js"></script>
@@ -285,6 +499,5 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-</body>
-
+  </body>
 </html>
